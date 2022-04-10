@@ -4,7 +4,7 @@ export const  sliderItems=[
         title:"SUMMER SALE",
         img:"https://flone.jamstacktemplates.dev/assets/img/slider/single-slide-1.png",
         dis:"DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
-        bg:"#F0E0FF"
+        bg:"#FFF7F7"
         
     },
     {
@@ -12,7 +12,7 @@ export const  sliderItems=[
         title:"WINTER SALE",
         img:"https://flone.jamstacktemplates.dev/assets/img/slider/single-slide-hm1-2.png",
         dis:"DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
-        bg:"#F0E0FF"
+        bg:"#f5fafb"
         
     },
     {
@@ -20,8 +20,7 @@ export const  sliderItems=[
         title:"POPULAR SALE",
         img:"https://flone.jamstacktemplates.dev/assets/img/slider/single-slide-2.png",
         dis:"DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
-        bg:"#F0E0FF"
+        bg:"#fcf1ed;"
         
     },
-    
 ]
