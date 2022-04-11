@@ -10,7 +10,9 @@ justify-content: space-between;
 
 
 `
-
+const Title=styled.h1`
+text-align:center
+`
 
 const Products = () => {
     const [products,setProducts]=useState([])
@@ -20,10 +22,16 @@ const Products = () => {
         .then(data=>setProducts(data))
     },[])
     return (
+        <>
+        <Title>
+        <h1>Products</h1>
+        </Title>
         <Container>
-            {products.slice(0,9).map(product=><Product product={product} key={product.id}></Product>)}
+           
+           {products.slice(0,10).map(product=><Product product={product} key={product.id}></Product>)}
 
-      </Container>
+     </Container>
+        </>
     );
 };
 
