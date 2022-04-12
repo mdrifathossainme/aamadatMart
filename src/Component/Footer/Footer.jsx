@@ -1,9 +1,14 @@
 import { Facebook, Instagram, LinkedIn, MailOutline, Phone, Pinterest, Room, Twitter } from '@material-ui/icons';
 import styled from 'styled-components';
+import { mobile } from '../../responsive';
+
+
 const Container=styled.div`
 display: flex;
 margin-left:50px;
-padding-bottom:20px
+padding-bottom:20px;
+${mobile({flexDirection:"column",marginTop:"10px" })} 
+
 `
 const Lego=styled.h1`
 flex:1;
@@ -33,6 +38,8 @@ flex:1;
 `
 const Center=styled.div`
 flex:1;
+${mobile({display:"none" })} 
+
 `
 const Title=styled.h3`
 margin-bottom: 30px;
@@ -53,6 +60,8 @@ cursor:pointer;
 
 const Right=styled.div`
 flex:1;
+${mobile({paddingTop:"15px",backgroundColor:"#fff8f8" })} 
+
 `
 const ContactItem=styled.div`
 display: flex;

@@ -6,12 +6,14 @@ import Announcement from '../../Component/Announcement/Announcement';
 import Footer from '../../Component/Footer/Footer';
 import Navbar from '../../Component/Navbar/Navbar';
 import Newsletter from '../../Component/Newsletter/Newsletter';
+import { mobile } from '../../responsive';
 
 
 const Container=styled.div``
 const Wrapper=styled.div`
 padding: 50px;
 display: flex;
+${mobile({padding:"10px",flexDirection:"column"})} 
 
 `
 const ImgContainer=styled.div`
@@ -23,23 +25,28 @@ const Img=styled.img`
 width: 100%;
 height: 90vh;
 object-fit: cover;
+${mobile({height: "40vh" })} 
 
 
 `
 const InfoContainer=styled.div`
 flex: 1;
+
 `
 const Title=styled.h1`
 font-weight: 200;
+${mobile({textAlign:"center" })} 
 
 `
 const Desc=styled.p`
 margin: 20px 0;
-
+${mobile({textAlign:"center" })} 
 `
 const Price=styled.span`
 font-weight: 200;
 font-size: 40px;
+${mobile({display:"flex",justifyContent:"center" })} 
+
 
 `
 const FilterContainer=styled.div`
@@ -47,6 +54,7 @@ display: flex;
 justify-content: space-between;
 width: 50%;
 margin: 20px 0;
+${mobile({width:"100%" })} 
 
 `
 const Filter=styled.div`
@@ -81,6 +89,7 @@ width: 50%;
 display: flex;
 align-items: center;
 justify-content: space-between;
+${mobile({width:"100%" })} 
 
 `
 
@@ -88,6 +97,7 @@ const AmountContainer=styled.div`
 display: flex;
 align-items: center;
 font-weight: 700;
+cursor:pointer;
 
 `
 const Amount=styled.span`
@@ -100,6 +110,7 @@ align-items: center;
 justify-content: center;
 margin:0 5px ;
 font-weight: 500;
+cursor: default;
 
 &:hover{
 

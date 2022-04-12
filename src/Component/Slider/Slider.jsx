@@ -2,12 +2,15 @@ import { ArrowLeftRounded, ArrowRightOutlined} from '@material-ui/icons';
 import { useState } from 'react';
 import styled from 'styled-components';
 import {sliderItems} from "../../data"
+import { mobile } from '../../responsive';
+
 const Container=styled.div`
 width:100%;
 height:100Vh;
 display:flex;
 background-color:#F0E0FF;
 overflow: hidden;
+${mobile({display:"none" })} 
 
 `
 

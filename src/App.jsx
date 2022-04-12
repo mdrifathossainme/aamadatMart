@@ -1,5 +1,8 @@
+import Cart from "./Pages/Cart/Cart";
 import Home from "./Pages/Home";
+import Login from "./Pages/Login/Login";
 import ProductList from "./Pages/ProductList/ProductList";
+import Regsiter from "./Pages/Regsiter/Regsiter";
 import SingleProduct from "./Pages/SingleProduct/SingleProduct";
 
 
@@ -8,7 +11,10 @@ return(
     <div>
         {/* <Home></Home> */}
         {/* <ProductList></ProductList> */}
-        <SingleProduct/>
+        {/* <SingleProduct/> */}
+        {/* <Regsiter/> */}
+        {/* <Login/> */}
+        <Cart/>
     </div>
 );
 }
