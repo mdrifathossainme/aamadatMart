@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Badge from '@mui/material/Badge';
 import { mobile } from '../../responsive';
+import { Link } from 'react-router-dom';
 
 
 const Container=styled.div`
@@ -48,7 +49,6 @@ text-align:center
 const Logo= styled.h1`
 font-weight:bold;
 ${mobile({fontSize:"24px" })} 
-
 `
 
 
@@ -85,7 +85,7 @@ const Navbar = () => {
                         
                      </Left>
                    <Center>
-                       <Logo>AAMADAT.</Logo>
+                       <Link style={{textDecoration:"none"}} to="/"> <Logo>AAMADAT.</Logo></Link>
                     </Center>
                    <Right>
                        <MenuItem>REGISTER</MenuItem>

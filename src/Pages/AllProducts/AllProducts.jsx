@@ -1,6 +1,7 @@
+import React from 'react';
 import styled from 'styled-components';
 import { useProduct } from '../../hooks/UseProduct';
-import Product from './Product';
+import Allproduct from './Allproduct';
 
 const Container= styled.div`
 display: flex;
@@ -14,8 +15,8 @@ const Title=styled.h1`
 text-align:center
 `
 
-const Products = () => {
-   const [products]=useProduct([])
+const AllProducts = () => {
+    const [products]=useProduct([])
     return (
         <>
         <Title>
@@ -23,11 +24,11 @@ const Products = () => {
         </Title>
         <Container>
            
-           {products.slice(4,14).map(product=><Product product={product} key={product.id}></Product>)}
+           {products.map(product=><Allproduct product={product} key={product.id}></Allproduct>)}
 
      </Container>
         </>
     );
 };
 
-export default Products;
+export default AllProducts;

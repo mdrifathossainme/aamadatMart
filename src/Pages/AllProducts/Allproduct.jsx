@@ -58,24 +58,24 @@ cursor: pointer;
 }
 `  
 
-
-const Product = ({product}) => {
+const Allproduct = ({product}) => {
+    console.log(product)
     return (
-      <Container>
-                <Image src={product.img}></Image>
-                <Info>
-                    <Icon>
-                        <ShoppingCartOutlined/>
-                    </Icon>
-                    <Icon>
-                        <SearchOutlined/>
-                    </Icon>
-                    <Icon>
-                        <FavoriteBorderOutlined/>
-                    </Icon>
-                </Info>
-      </Container>
-    );
+        <Container>
+                  <Image src={product.img}></Image>
+                  <Info>
+                      <Icon>
+                          <ShoppingCartOutlined/>
+                      </Icon>
+                      <Icon>
+                          <SearchOutlined/>
+                      </Icon>
+                      <Icon>
+                          <FavoriteBorderOutlined/>
+                      </Icon>
+                  </Info>
+        </Container>
+      );
 };
 
-export default Product;
+export default Allproduct;
